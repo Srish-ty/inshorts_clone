@@ -25,4 +25,5 @@ width:129.8 px;
 margin:auto;
 height:55px;
 border:1px solid red;
+margin-left:40vw;
 `
