@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Panel=styled.aside`
-background-color:grey;
+background-color:#33343d;
+color:white;
 display:block;
 height:100%;
 position:absolute;
