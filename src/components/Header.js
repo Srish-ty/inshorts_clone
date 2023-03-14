@@ -9,7 +9,7 @@ export default function Header() {
 
   const show=()=>{
     //alert('haha');
-    if(sideBar.style.display=='block'){
+    if(sideBar.style.display==='block'){
       sideBar.style.display='none';
       hambu.style.marginLeft='0vw';
       micon.style.marginLeft='40vw';
