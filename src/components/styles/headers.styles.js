@@ -24,6 +24,6 @@ export const Logo_img =styled.img`
 width:129.8 px;
 margin:auto;
 height:55px;
-border:1px solid red;
+border:0px solid red;
 margin-left:40vw;
 `
