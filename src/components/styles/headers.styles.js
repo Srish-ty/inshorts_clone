@@ -9,6 +9,7 @@ display:flex;
 align-items: center;
 padding:1vw;
 box-shadow:0px 0.1vw 1vw #5c5c5c;
+margin-bottom:1.5vw;
 `
 
 export const HambIcon = styled.img`

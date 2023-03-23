@@ -8,3 +8,10 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+
+fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=6158997032204f0abd89567fce056c9c')
+.then(resapi=>{return resapi.json();})
+.then(res=>{
+  console.log(res);
+})

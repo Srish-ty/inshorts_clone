@@ -1,4 +1,7 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
+import { NewsCard } from './NewsCard';
+
+/*
 const inshorts = require('inshorts-news-api');
 
 
@@ -34,3 +37,34 @@ export default function BodyConrainer() {
   )
 }
 console.log(<Contain/>);
+*/
+const BodyConrainer=()=>{
+
+const [articles, setArticles] = useState([]);
+
+
+useEffect(()=>{
+
+
+  fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=6158997032204f0abd89567fce056c9c')
+  .then(resapi=>{return resapi.json();})
+  .then(res=>{
+    //console.log(res);
+    setArticles(res.articles);
+  })
+    .catch(err=>{console.log(err);})
+
+},[])
+
+return(
+  articles.map(
+    article=>(
+      <NewsCard>{article}</NewsCard>
+    )
+  )
+)
+}
+
+
+
+export {BodyConrainer};

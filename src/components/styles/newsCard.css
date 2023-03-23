@@ -1,0 +1,57 @@
+.nCardContainer{
+    position: relative;
+    display: flex;
+    margin:2vw auto;
+    padding: 2vw;
+    border:0px solid red;
+    box-shadow: 0vw 0.075vw 0.4vw #787878;
+}
+
+@media only screen and (min-width:900px){
+    .nCardContainer{
+        flex-direction:row;
+        width:800px;
+        height:15vw;
+    }   
+    .newImg{
+        height: 100%;
+        width:400px;
+    }
+}
+
+@media only screen and (max-width:900px){
+ .nCardContainer{
+    flex-direction:column;
+    width:400px;
+    height:500px;
+}  
+.newImg{
+    height: 200px;
+    width: 100%;
+} 
+}
+
+
+.nPara{
+    border:0px solid red;
+    padding: 1.2vw;
+}
+
+.ntitle{
+    padding: auto;
+    display: inline;
+    font-size: large;
+    border: 0px solid red;
+}
+
+.content{
+    padding:1vw;
+}
+
+.readMore{
+    position: absolute;
+    bottom: 2vw;
+    color:black;
+    display: block;
+    text-decoration: none;
+}

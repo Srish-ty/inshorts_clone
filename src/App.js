@@ -1,14 +1,21 @@
+import axios from "axios";
+import { useState } from 'react';
 import Header from './components/Header';
-import BodyConrainer from './components/BodyConrainer';
+import BodyContainer from './components/BodyContainer';
 import LeftPanel from './components/LeftPanel';
+import { RedRibbon } from './components/RedRibbon';
+import { BodyConrainer } from "./components/BodyConrainer";
+
 
 function App() {
-  //const [newsArray, setNewsArray] = useState([]);
+
+
   return (
     <>
     <Header/>
-    <BodyConrainer/>
     <LeftPanel/>
+    <RedRibbon/>
+    <BodyConrainer/>
     </>
   );
 }
