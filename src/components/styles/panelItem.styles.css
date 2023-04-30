@@ -1,0 +1,13 @@
+.panIt{
+    list-style-type: none;
+    color:white;
+    padding: 0.8vw 1vw;
+    margin: 0vw;
+    border: 0px solid red;
+}
+
+.panIt:hover{
+    border-radius: 2px;
+    background-color: #797c85;
+
+}
